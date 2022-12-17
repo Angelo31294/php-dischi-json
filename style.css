@@ -1,0 +1,36 @@
+/* --------------------
+    RESET
+-------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------
+    COMMON
+-------------------- */
+body {
+  background-color: #1d2d3c;
+  color: #fff;
+}
+
+/* --------------------
+    CONTAINER
+-------------------- */
+.container {
+  width: 80rem;
+  margin: auto;
+}
+
+/* --------------------
+    HEADER
+-------------------- */
+header {
+  background-color: #06131f;
+  padding: 1.25rem;
+}
+
+.logo {
+  width: 3.125rem;
+}

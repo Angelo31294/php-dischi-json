@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN VueJS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- /CDN VueJS -->
+    <!-- CDN Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- /CDN Axios -->
+    <title>PHP Dischi JSON</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <img class="logo" src="img/spotify-logo-png-7078.png" alt="Logo" />
+      </header>
+      <main>
+        <div class="container">
+          <ul>
+            <li v-for="album in albums">{{ album.title }}</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
