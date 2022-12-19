@@ -11,8 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- /CDN Axios -->
     <title>PHP Dischi JSON</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div id="app">
@@ -21,11 +20,15 @@
       </header>
       <main>
         <div class="container">
-          <ul>
-            <li v-for="album in albums">{{ album.title }}</li>
-          </ul>
+          <div v-for="album in albums" class="card">
+            <img :src="album.poster" alt="" />
+            <h3>{{ album.title }}</h3>
+            <span>{{ album.author }}</span>
+            <h5>{{album.genre}}</h5>
+          </div>
         </div>
       </main>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
